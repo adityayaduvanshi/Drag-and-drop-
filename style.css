@@ -1,0 +1,38 @@
+[draggable] {
+  user-select: none;
+}
+body {
+  background-color: black;
+}
+.drag-list {
+  overflow: hidden;
+  margin: 200px auto;
+
+  width: 1200px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+.drag-item {
+  display: flex;
+  flex-direction: row;
+
+  width: 25%;
+
+  color: #555;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: 0.25s;
+}
+img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.drag-start {
+  opacity: 0.8;
+}
+.drag-enter {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
